@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 
 import Home from '../Home/Home';
-import Sale from '../Home/Sale/Sale';
+import Sale from '../Sale/Sale';
 import New from '../New/New';
 
 const AppRoutes = () => {
