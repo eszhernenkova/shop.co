@@ -4,7 +4,7 @@ export const ROUTES = {
     WOMAN: '/woman',
     JEWELERY: 'jewelery',
     CART: '/cart',
+    PRODUCT: '/:id',
     // PROFILE: '/profile',
-    // PRODUCT: '/products/:id',
     // CATEGORY: '/categories/:id',
 }
