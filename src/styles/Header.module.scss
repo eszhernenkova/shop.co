@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
 
+    .active{
+        font-weight: 900;
+    }
+
 
 
     .logo {
@@ -12,22 +16,26 @@
         color: #000;
     }
 
-    .info{
+        
+
+    .navbar{
         display: flex;
         flex-grow: 1;
+        width:  50%;
         justify-content: center;
+        
 
-        .navbar{
+        .menu{
             display: flex;
-            width:  50%;
             justify-content: space-between;
 
-            .pages{
-                color: #000;
+            li {
+                padding-left: 20px;
             }
-            
         }
+        
     }
+
 
     .form {
         display: flex;

@@ -1,3 +1,5 @@
+//вернуться к стилям
+
 .footer {
     display: flex;
     align-items: center;
@@ -15,10 +17,12 @@
         width: calc(20% - 5px);
 
         h2 {
+            text-align: start;
             text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 30px;
         }
+        
         p {
             color: #616160;
             font-weight: 400;

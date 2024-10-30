@@ -1,24 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { ROUTES } from '../../utils/routes';
 
 import styles from '../../styles/Header.module.scss';
+import { useSelector } from 'react-redux';
 
 
 const Header = () => {
+
+  const { list } = useSelector(({ categories }) => categories )
   return (
     <section className={styles.header}>
       <div >
         <Link className={styles.logo} to={ROUTES.HOME}>shop.co</Link>
       </div>
 
-      <div className={styles.info}>
+      {/* <div className={styles.info}> */}
         <div className={styles.navbar}>
-          <Link className={styles.pages} to={ROUTES.SALE}>On Sale</Link>
-          <Link className={styles.pages} to={ROUTES.NEW}>New Arrivals</Link>
+          <nav className={styles.menu}>
+            {list
+            .filter(category => category !== 'electronics')
+            .map((category, index) => (
+              <li key={index}>
+                <NavLink 
+                  to={`/categories/${category}`} 
+                  className={({ isActive }) => `${isActive ? styles.active : ""}`}>
+                    {category}
+                </NavLink>
+              </li>
+            ))}
+          </nav>
+          
+          
         </div>
-      </div>
+      {/* </div> */}
 
       <form className={styles.form}>
           <svg className="icon">
