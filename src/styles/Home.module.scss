@@ -24,13 +24,65 @@
                 font-size: 64px;
                 line-height: 64px;
             }
+
+            .subtitle {
+                margin-top: 32px;
+                font-weight: 400;
+                line-height: 20px;
+                opacity: 0.6;
+            }
+
+            button {
+                margin-top: 32px;
+                width: 210px;
+                height: 52px;
+            }
+
+            .reviews {
+                display: flex;
+                margin-top: 48px;
+
+                .review {
+                    position: relative;
+                    padding-right: 32px;
+
+                    &.middle::before,
+
+                        &.middle::after {
+                            content: "";
+                            position: absolute;
+                            width: 2px;
+                            height: 74px;
+                            background-color: #8e8d8d;
+                            opacity: 0.2;
+                        }
+                    
+                        &.middle::before {
+                            left: -20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    
+                        &.middle::after {
+                            right: 20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    
+                    h3 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        padding-bottom: 20px;
+                    }
+                    p {
+                        font-weight: 400;
+                        opacity: 0.8;
+                    }
+                }
+            }
         }
 
-        .subtitle {
-            font-weight: 400;
-            line-height: 20px;
-            opacity: 0.6;
-        }
+        
 
         .image {
             position: relative;

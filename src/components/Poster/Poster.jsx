@@ -22,7 +22,7 @@ const Poster = () => {
                         <h3>200+</h3>
                         <p>International Brands</p>
                     </div>
-                    <div className={styles.review}>
+                    <div className={`${styles.review} ${styles.middle}`}>
                         <h3>2,000+</h3>
                         <p>High-Quality Products</p>
                     </div>
