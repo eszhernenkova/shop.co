@@ -6,5 +6,5 @@ export const ROUTES = {
     CART: '/cart',
     PRODUCT: '/:id',
     // PROFILE: '/profile',
-    // CATEGORY: '/categories/:id',
+    CATEGORY: '/categories',
 }

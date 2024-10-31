@@ -11,9 +11,6 @@ const Products = ({ title, products = [], amount }) => {
         currency: 'USD'
     }
 
-    const generateRandomRating = () => Math.floor(Math.random() * 5) + 1;
-    const rating = generateRandomRating();
-
     // для рендеринга звездочек
     const renderStars = (rating) => {
         return Array.from({ length: 5 }, (_, index) => (
@@ -21,7 +18,7 @@ const Products = ({ title, products = [], amount }) => {
                 key={index} 
                 style={{
                     color: index < rating ? '#FFD700' : '#ddd', // жёлтые звёзды до значения рейтинга, серые после
-                    fontSize: '20px', 
+                    fontSize: '22px', 
                     marginRight: '2px' 
                 }}
             >
@@ -32,29 +29,29 @@ const Products = ({ title, products = [], amount }) => {
 
   return (
     <section className={styles.products}>
-        {title && <h2>{title}</h2> }
+        {title && <h2 className={styles.title}>{title}</h2> }
         <div className={styles.list}>
-            {list.map(({ id, image, title, price }) =>(
+            {list.map(({ id, image, title, price, rating }) =>(
                 <Link to={`${id}`} key={id} className={styles.product}>
                     <div className={styles.image} 
                         style={{ backgroundImage: `url(${image})` }}
                     />
                     <div className={styles.wrapper}>
-                        <h3 className={styles.title}>{title}</h3>
+                        <h3 className={styles.subtitle}>{title}</h3>
                         <div className={styles.score}>
-                                {renderStars(rating)}
+                                {renderStars(rating?.rate)}
                             </div>  
                         <div className={styles.info}>           
                             <div className={styles.price}>{new Intl.NumberFormat('en-US', options).format(price)}</div>
                             <div className={styles.oldPrice}>
                                 {new Intl.NumberFormat('en-US', options).format(Math.floor(price * 0.9))}
                             </div>
-
                         </div>
                     </div>
                 </Link>
             ))}
         </div>
+        <button>View All</button>
     </section>
   )
 }

@@ -1,0 +1,49 @@
+.section {
+    width: 100%;
+    padding: 64px;
+    color: #000000;
+    background: #F0F0F0;
+    border-radius: 30px;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .list {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; //отступ между элементами
+    }
+
+    .item {
+        border-radius: 30px;
+    // flex-grow для регулирования ширины
+        flex: 0 0 calc(50% - 15px);; // для первых двух элементов (50% ширины с учетом отступа)
+        overflow: hidden;
+        text-align: center;
+    
+        &:nth-child(3) {
+            // третья категория
+            flex: 1 1 100%; // занимает всю ширину
+            margin-top: 10px; 
+        }
+    }
+
+    .image {
+        width: 100%;
+        height: 230px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 36px;
+        text-align: start;
+        padding: 36px 0 0 36px;
+    }
+}
