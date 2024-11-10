@@ -5,6 +5,14 @@
     width: 100%;
     padding: 25px 0;
 
+    hr {
+        margin: 64px 0;
+        width: 100%;
+        height: 1px;
+        color: #F0EEED;
+
+    }
+
     button {
         background: none;
         border: 1px solid #cccbcb;
@@ -14,6 +22,10 @@
         height: 52px;
         margin-top: 36px;
 
+        &:hover {
+            background: #090909;
+            color: #fffefe;
+        }
     }
 
     .list {

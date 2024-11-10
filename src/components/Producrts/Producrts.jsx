@@ -52,7 +52,9 @@ const Products = ({ title, products = [], amount }) => {
             ))}
         </div>
         <button>View All</button>
+        <hr />
     </section>
+    
   )
 }
 
