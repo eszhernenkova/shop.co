@@ -13,20 +13,20 @@ const Footer = () => {
         <Link className={styles.logo} to={ROUTES.HOME}>shop.co</Link>
         <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
         <div className={styles.socials}>
-          <a href='https://x.com/'>
+          <a href='https://x.com/' target="_blank" >
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="14" cy="14" r="14" fill="white"/>
               <circle cx="14" cy="14" r="13.5" stroke="black" strokeOpacity="0.2"/>
               <path d="M20.2071 10.9831C19.7881 11.1693 19.3458 11.2857 18.8802 11.3556C19.3458 11.0762 19.7183 10.6339 19.8812 10.0985C19.4389 10.3546 18.9501 10.5408 18.4146 10.6572C17.9956 10.2149 17.3904 9.93555 16.7386 9.93555C15.4815 9.93555 14.4572 10.9598 14.4572 12.2169C14.4572 12.4031 14.4805 12.5661 14.5271 12.729C12.6415 12.6359 10.9421 11.728 9.80141 10.3313C9.61518 10.6805 9.49878 11.0529 9.49878 11.472C9.49878 12.2634 9.89453 12.9618 10.5231 13.3808C10.1506 13.3576 9.80141 13.2644 9.4755 13.1015V13.1248C9.4755 14.2422 10.267 15.1733 11.3145 15.3828C11.1283 15.4294 10.9188 15.4527 10.7093 15.4527C10.5696 15.4527 10.4067 15.4294 10.267 15.4061C10.5696 16.314 11.4077 16.9891 12.4087 16.9891C11.6172 17.5943 10.6395 17.9668 9.56862 17.9668C9.38239 17.9668 9.19616 17.9668 9.0332 17.9435C10.0575 18.5953 11.2447 18.9678 12.5483 18.9678C16.7618 18.9678 19.0665 15.476 19.0665 12.4497C19.0665 12.3566 19.0665 12.2402 19.0665 12.1471C19.5088 11.8444 19.9045 11.4487 20.2071 10.9831Z" fill="black"/>
             </svg>
           </a>
-          <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F">
+          <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F" target="_blank">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="14" cy="14" r="14" fill="black"/>
               <path d="M12.7087 20.3038V14.7503H10.8398V12.5859H12.7087V10.9898C12.7087 9.13752 13.84 8.12891 15.4924 8.12891C16.2839 8.12891 16.9642 8.18784 17.1624 8.21417V10.1499L16.0164 10.1505C15.1178 10.1505 14.9438 10.5775 14.9438 11.2041V12.5859H17.087L16.8079 14.7503H14.9438V20.3038H12.7087Z" fill="white"/>
             </svg>
           </a>
-          <a href="https://instagram.com">
+          <a href="https://instagram.com" target="_blank">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="14" cy="14" r="14" fill="white"/>
               <circle cx="14" cy="14" r="13.5" stroke="black" strokeOpacity="0.2"/>
@@ -35,7 +35,7 @@ const Footer = () => {
               <path d="M17.6176 11.1981C18.0665 11.1981 18.4305 10.8341 18.4305 10.3852C18.4305 9.93621 18.0665 9.57227 17.6176 9.57227C17.1686 9.57227 16.8047 9.93621 16.8047 10.3852C16.8047 10.8341 17.1686 11.1981 17.6176 11.1981Z" fill="black"/>
             </svg>
           </a>
-          <a href="https://github.com/eszhernenkova/shop.co">
+          <a href="https://github.com/eszhernenkova/shop.co" target="_blank">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="14" cy="14" r="14" fill="white"/>
               <circle cx="14" cy="14" r="13.5" stroke="black" strokeOpacity="0.2"/>
@@ -48,34 +48,34 @@ const Footer = () => {
 
       <div className={styles.info}>
         <h2>company</h2>
-        <a href="#">About</a>
-        <a href="#">Features</a>
-        <a href="#">Works</a>
-        <a href="#">Career</a>
+        <Link to={ROUTES.INDRAFTING}>About</Link>
+        <Link to={ROUTES.INDRAFTING}>Features</Link>
+        <Link to={ROUTES.INDRAFTING}>Works</Link>
+        <Link to={ROUTES.INDRAFTING}>Career</Link>
       </div>
 
       <div className={styles.info}>
         <h2>help</h2>
-        <a href="#">Customer Support</a>
-        <a href="#">Delivery Details</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
+        <Link to={ROUTES.INDRAFTING}>Customer Support</Link>
+        <Link to={ROUTES.INDRAFTING}>Delivery Details</Link>
+        <Link to={ROUTES.INDRAFTING}>Terms & Conditions</Link>
+        <Link to={ROUTES.INDRAFTING}>Privacy Policy</Link>
       </div>
 
       <div className={styles.info}>
         <h2>faq</h2>
-        <a href="#">Account</a>
-        <a href="#">Manage Deliveries</a>
-        <a href="#">Orders</a>
-        <a href="#">Payments</a>
+        <Link to={ROUTES.INDRAFTING}>Account</Link>
+        <Link to={ROUTES.INDRAFTING}>Manage Deliveries</Link>
+        <Link to={ROUTES.INDRAFTING}>Orders</Link>
+        <Link to={ROUTES.INDRAFTING}>Payments</Link>
       </div>
 
       <div className={styles.info}>
         <h2>resources</h2>
-        <a href="#">Free eBooks</a>
-        <a href="#">Development Tutorial</a>
-        <a href="#">How to - Blog</a>
-        <a href="#">Youtube Playlist</a>
+        <Link to={ROUTES.INDRAFTING}>Free eBooks</Link>
+        <Link to={ROUTES.INDRAFTING}>Development Tutorial</Link>
+        <Link to={ROUTES.INDRAFTING}>How to - Blog</Link>
+        <Link to={ROUTES.INDRAFTING}>Youtube Playlist</Link>
       </div>
 
     </section>

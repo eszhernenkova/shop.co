@@ -7,4 +7,5 @@ export const ROUTES = {
     PRODUCT: '/:id',
     // PROFILE: '/profile',
     CATEGORY: '/categories',
+    INDRAFTING: '/in-drafting',
 }

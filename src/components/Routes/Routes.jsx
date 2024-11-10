@@ -2,15 +2,14 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 
 import Home from '../Home/Home';
-import Sale from '../Sale/Sale';
-import New from '../New/New';
+import InDrafting from '../pages/InDrafting';
+
 
 const AppRoutes = () => {
   return (
    <Routes>
         <Route index element={<Home />}/>
-        <Route index element={<Sale />}/>
-        <Route index element={<New />}/>
+        <Route path="/in-drafting" element={<InDrafting />}/>
 
    </Routes>
   );
