@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from '../../styles/Footer.module.scss';
-import email from '../../images/email.svg';
+import emailIMG from '../../images/email.svg';
 
 
 import { ROUTES } from '../../utils/routes';
 
 
+
 const Footer = () => {
+
+  const [ email, setEmail ] = useState("");
+
+  const handleEmail = ({ target: { email } }) => {
+    setEmail(email);
+  }
+
   return (<>
     <section className={styles.wrapper}>
       <div className={styles.connection}>
         <div className={styles.text}><p>STAY UPTO DATE ABOUT OUR LATEST OFFERS</p></div>
         <form className={styles.form}>
-          <img src={email} alt='icon'/>
-          <input type='email' placeholder='Enter your email address' value='' name='email'/>
+          <div className={styles.input}>
+            <img src={emailIMG} alt='icon'/>
+            <input type='email'
+                   placeholder='Enter your email address' 
+                   name='email'
+                   value={email}
+                   onChange={handleEmail} 
+            />
+          </div>
+          <button>Subscribe to Newsletter</button>
         </form>
       </div>
         <section className={styles.footer}>

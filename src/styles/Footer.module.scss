@@ -12,7 +12,8 @@
             background: #000;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0 64px;
 
             .text{
                 color: #F0EEED;
@@ -22,24 +23,46 @@
 
                 
                 p {
-                    font-weight: 500;
+                    font-weight: 900;
                     font-size: 40px;
                     line-height: 40px;
                 }
             }
 
             .form {
-                background: #F0EEED;
-                width: 349px;
-                height: 48px;
-                border-radius: 30px;
-                display: flex;
-                align-items: center;
-                padding: 10px;
-
-                input {
-                    background: none;
+                > * {
+                    width: 349px;
+                    height: 48px;
                 }
+                .input {
+                    padding: 18px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 30px;
+                    background: #F0EEED;
+
+                    img {
+                        padding-right: 10px;
+                    }
+
+                    input {
+                        background: none;
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    margin-top: 14px;
+                    color: #000;
+                    font-weight: 500;
+                    font-size: 16px;
+                    background: #F0EEED;
+
+                    &:hover {
+                        font-weight: 600;
+                    }
+                }
+                
             }
         }
     
