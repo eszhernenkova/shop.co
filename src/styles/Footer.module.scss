@@ -1,59 +1,105 @@
 //вернуться к стилям
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+.wrapper {
     width: 100%;
-    height: 100%;
-    background: #F0EEED;
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        padding: 10px;
-        width: calc(20% - 5px);
-
-        h2 {
-            text-align: start;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-        
-        p {
-            color: #616160;
-            font-weight: 400;
-
-        }
-        
-        a {
-            color: #616160;
-            font-weight: 400;
-            line-height: 40px;
-        }
-
-        .socials {
+    position: absolute;
+    .connection {
+            position: relative;
+            bottom: -100px;
+            left: 12%;
             width: 80%;
-            padding-top: 25px;
-            a {
+            height: 180px;
+            border-radius: 25px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                padding: 5px;
+            .text{
+                color: #F0EEED;
+                width: 50%;
+                text-align: start;
+                display: flex;
+
+                
+                p {
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            .form {
+                background: #F0EEED;
+                width: 349px;
+                height: 48px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                input {
+                    background: none;
+                }
             }
         }
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //margin-top: 20px;
+        padding: 150px 100px 100px 100px;
+        width: 100%;
+        height: 100%;
+        gap: 114px;
+        background: #F0EEED;
 
-        .logo {
-            font-size: 2rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: #000;
-            padding-bottom: 30px;
+        .info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            width: calc(10% - 5px);
+
+            h2 {
+                text-align: start;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #616160;
+                font-weight: 400;
+
+            }
+
+            a {
+                color: #616160;
+                font-weight: 400;
+                line-height: 40px;
+            }
+
+            .socials {
+                width: 100%;
+                padding-top: 25px;
+
+                a {
+
+                    padding: 5px;
+                }
+            }
+
+            .logo {
+                font-size: 2rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: #000;
+                padding-bottom: 30px;
+            }
+
+
         }
 
 
     }
-
-    
 }

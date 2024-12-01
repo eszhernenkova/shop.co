@@ -34,7 +34,7 @@ const Poster = () => {
             </div>
             
             <div className={styles.image}>
-                <img src={BG} />
+                <img src={BG} alt='poster'/>
             </div>
         </div>
     </section>
